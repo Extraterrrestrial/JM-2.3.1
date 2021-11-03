@@ -6,16 +6,16 @@
 </head>
 <body>
 <div>
-    <h2>Edit User</h2>
+    <h2>Редактировать/Edit User</h2>
     <form th:action="@{/user/edit/{id}(id=${user.id})}" th:object="${user}" method="post">
-        <br/> Name:
+        <br/> Имя/Name:
         <input type="text" th:field="*{name}"/>
-        <br/> Age:
+        <br/> Возраст/Age:
         <input type="text" th:field="*{age}"/>
         <br/> Email:
         <input type="text" th:field="*{email}"/>
         <br/>
-        <input type="submit" value="Update User"/>
+        <input type="submit" value="Обновить/Update User"/>
     </form>
 </div>
 </body>
