@@ -5,7 +5,7 @@
     <title></title>
 </head>
 <body>
-<div align="center">
+<div>
     <h2>Edit User</h2>
     <form th:action="@{/user/edit/{id}(id=${user.id})}" th:object="${user}" method="post">
         <br/> Name:
